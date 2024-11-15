@@ -129,7 +129,7 @@ if uploaded_file:
         model = load_xception_model("../weights/xception_model.weights.h5")
         img_size = (299, 299)
     else:
-        model = load_model("../weights/custom_model.weights.h5")
+        model = load_model("../weights/cnn_model.h5")
         img_size = (224, 224)
         
     labels = ["Glioma", "Meningioma", "No tumor", "Pituitary"]
